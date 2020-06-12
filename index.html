@@ -22,26 +22,11 @@
     <link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
-	<script>
-		$.ajax({
-  url      : document.location.protocol + encodeURIComponent("http://techbreeze.epizy.com/?feed=atom"),
-  dataType : 'json',
-  success  : function (data) {
-    if (data.responseData.feed && data.responseData.feed.entries) {
-      $.each(data.responseData.feed.entries, function (i, e) {
-        console.log("------------------------");
-        console.log("title      : " + e.title);
-        console.log("author     : " + e.author);
-        console.log("description: " + e.description);
-      });
-    }
-  }
-});
-	</script>
+	
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html"><span>P</span>avan</a>
