@@ -28,7 +28,7 @@
 	  
 	<script>
 		$.ajax({
-  url      : document.location.protocol + encodeURIComponent("http://techbreeze.epizy.com/?feed=atom"),
+  url      :encodeURIComponent("http://techbreeze.epizy.com/?feed=atom"),
   dataType : 'json',
   success  : function (data) {
     if (data.responseData.feed && data.responseData.feed.entries) {
