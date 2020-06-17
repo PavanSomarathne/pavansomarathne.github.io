@@ -8463,7 +8463,7 @@ h1, h2, h3, h4, h5,
   left: 0;
   right: 0;
   bottom: 150px;
-  z-index:-1; }
+  z-index:0; }
 
 .mouse-icon {
   width: 70px;
