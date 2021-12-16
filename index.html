@@ -3,7 +3,8 @@
 
 <head>
 	<title>Pavan Somarathne</title>
-	<meta name="description" content="I am a person who would love to try new thing that motivates me to live life and a vigilant observer about Society or nature or whatever the domain I have been working for and find out quick and easy but fruitful solutions to the problems that we are going to face.Some of my interests are Web development, API development, and UI design. I believe failures may strengthen people never before by giving new experiences. So keep failing in a positive way... ">
+	<meta name="description"
+		content="I am an independent software developer who can help you with your software requirements.">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="images/LOGO.png" type="image/png">
@@ -34,6 +35,54 @@
 
 
 	<script src="https://kit.fontawesome.com/da373a1c0b.js" crossorigin="anonymous"></script>
+	<style>
+		.container-projects {
+			overflow: auto;
+			white-space: nowrap;
+			width: 100%;
+			transition: transform 0.5s ease-out;
+		}
+
+		.item-project {
+			display: inline-block;
+			white-space: normal;
+		}
+
+		#projects-container ::-webkit-scrollbar {
+			/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+			border-radius: 10px;
+			background-color: #F5F5F5;
+		}
+
+		#projects-container ::-webkit-scrollbar {
+			width: 12px;
+			background-color: #F5F5F5;
+		}
+
+		::-webkit-scrollbar-thumb {
+			border-radius: 50px;
+			/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+			background-color: rgb(212, 212, 212);
+		}
+
+		.hide {
+			display: none;
+		}
+
+		.map-container {
+			text-align: center;
+		}
+
+		.map-point-sm:focus {
+			border: 2px solid rgb(7, 144, 255);
+
+		}
+
+		.prj-btn-active {
+			background-color: rgb(7, 144, 255);
+			color: white;
+		}
+	</style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -52,7 +101,8 @@
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="http://techbreeze.epizy.com/" class="nav-link"><span>My Blog</span></a></li>
+					<li class="nav-item"><a href="http://techbreeze.epizy.com/" class="nav-link"><span>My
+								Blog</span></a></li>
 
 				</ul>
 			</div>
@@ -65,7 +115,7 @@
 				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 					<div class="text text-center">
 						<span class="subheading">Hey! I am</span>
-						<h1 class="m-0 p-0" >Pavan Somarathne</h1>
+						<h1 class="m-0 p-0">Pavan Somarathne</h1>
 						<h2>I'm a
 							<span class="txt-rotate" data-period="2000"
 								data-rotate='["Web Designer.", "Developer.", "Blogger." ]'></span>
@@ -88,9 +138,8 @@
 				<div class="col-md-6 col-lg-6">
 					<div class="img-about img  ">
 						<div class="overlay"></div>
-						<img class="img d-flex  align-items-center " 
-							src="images/about1.jpg">
-					</img>
+						<img class="img d-flex  align-items-center " src="images/about1.jpg">
+						</img>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-6 pl-md-5 py-1">
@@ -98,23 +147,28 @@
 						<div class="col-md-12 heading-section ftco-animate">
 							<h1 class="big">About</h1>
 							<h2 class="mb-3">About Me</h2>
-							<p>I am a person who would love to try new thing that motivates me to live life and a vigilant observer about 
-								Society or nature or whatever the domain I have been working for and find out quick and easy but fruitful solutions to the problems that we are going 
-								to face.Some of my interests are Web development, API development, and UI design. 
-								I believe failures may strengthen people never before by giving new experiences. So keep failing in a positive way... </p>
+							<p>I am a person who would love to try new thing that motivates me to live life and a
+								vigilant observer about
+								Society or nature or whatever the domain I have been working for and find out quick and
+								easy but fruitful solutions to the problems that we are going
+								to face.Some of my interests are Web development, API development, and UI design.
+								I believe failures may strengthen people never before by giving new experiences. So keep
+								failing in a positive way... </p>
 							<ul class="about-info mt-4 px-md-0 px-2">
 								<li class="d-flex"><span>Name:</span> <span>Pavan Somarathne</span></li>
-								<li class="d-flex"><span>Date of birth:</span> <span>January 14, 1998</span></li>
-								<li class="d-flex"><span>Address:</span> <span>421/5 Paragahamulla, Hindagolla</span></li>
-								<li class="d-flex"><span>Email:</span> <span>Pavanpabs@gmail.com</span></li>
+								<!-- <li class="d-flex"><span>Date of birth:</span> <span>January 14, 1998</span></li> -->
+								<li class="d-flex"><span>Address:</span> <span>421/5 Paragahamulla, Hindagolla</span>
+								</li>
+								<li class="d-flex"><span>Email:</span> <span>Pavansomarathne@gmail.com</span></li>
 								<li class="d-flex"><span>Phone: </span> <span>+94714387452</span></li>
 							</ul>
 						</div>
 					</div>
 					<div class="counter-wrap ftco-animate d-flex mt-md-3">
 						<div class="text">
-		
-							<p><a href="./docs/CV_Pavan_Somarathne.pdf" class="btn btn-primary py-3 px-4">Download CV</a></p>
+
+							<p><a href="./docs/CV_Pavan_Somarathne.pdf" class="btn btn-primary py-3 px-4">Download
+									CV</a></p>
 						</div>
 					</div>
 				</div>
@@ -124,7 +178,7 @@
 
 
 
-	<section class="ftco-section ftco-no-pb goto-here" >
+	<section class="ftco-section ftco-no-pb goto-here">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
@@ -158,7 +212,7 @@
 							<div class="text pl-3">
 								<span class="date">2004-2016</span>
 								<h2>Maliyadeva College</h2>
-								<p>G.C.E Advanced Level (2016) <br>G.C.E Ordinary Level   (2011)</p>
+								<p>G.C.E Advanced Level (2016) <br>G.C.E Ordinary Level (2011)</p>
 								<p></p>
 							</div>
 						</div>
@@ -168,7 +222,7 @@
 						<h2 class="heading">Experience</h2>
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
+								<span class="flaticon-idea"></span>
 							</div>
 							<div class="text pl-3">
 								<span class="date">12.2019-07.2020</span>
@@ -177,11 +231,22 @@
 								<p></p>
 							</div>
 						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-web-design"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">07.2021-12.2021</span>
+								<h2>Software Engineering Trainee</h2>
+								<span class="position">Digital Pulz (Pvt) Ltd</span>
+								<p></p>
+							</div>
+						</div>
 
 					</div>
 					<div id="page-3" class="page three">
 						<h2 class="heading">Technical Exposure</h2>
-						<div class="row progress-circle mb-5 align-self-stretch " >
+						<div class="row progress-circle mb-5 align-self-stretch ">
 							<div class="col-3 col-md-3  col-lg-2 mb-4 ">
 								<div class="bg-white pt-3 pb-2">
 									<div class=" mx-auto" data-value='90'>
@@ -220,6 +285,28 @@
 									<div class=" mx-auto" data-value='90'>
 
 										<div class=" w-100 h-100 d-flex align-items-center justify-content-center">
+											<div class="h2 font-weight-bold"><i class="fab fa-node"></i></div>
+										</div>
+									</div>
+									<p class="text-center mx-auto">Node.js</p>
+								</div>
+							</div>
+							<div class="col-3 col-md-3  col-lg-2 mb-4">
+								<div class="bg-white pt-3 pb-2">
+									<div class=" mx-auto" data-value='90'>
+
+										<div class=" w-100 h-100 d-flex align-items-center justify-content-center">
+											<div class="h2 font-weight-bold"><i class="fab fa-node-js"></i></div>
+										</div>
+									</div>
+									<p class="text-center mx-auto">Express.js</p>
+								</div>
+							</div>
+							<div class="col-3 col-md-3  col-lg-2 mb-4">
+								<div class="bg-white pt-3 pb-2">
+									<div class=" mx-auto" data-value='90'>
+
+										<div class=" w-100 h-100 d-flex align-items-center justify-content-center">
 											<div class="h2 font-weight-bold"><i class="fab fa-php"></i></div>
 										</div>
 									</div>
@@ -249,15 +336,16 @@
 								</div>
 							</div>
 
+
 							<div class="col-3 col-md-3  col-lg-2 mb-4">
 								<div class="bg-white pt-3 pb-2">
 									<div class=" mx-auto" data-value='90'>
 
 										<div class=" w-100 h-100 d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold"><i class="fab fa-node"></i></div>
+											<div class="h2 font-weight-bold"><i class="icon-laravel"></i></div>
 										</div>
 									</div>
-									<p class="text-center mx-auto">Node.js</p>
+									<p class="text-center mx-auto">Laraval</p>
 								</div>
 							</div>
 							<div class="col-3 col-md-3  col-lg-2 mb-4">
@@ -265,20 +353,39 @@
 									<div class=" mx-auto" data-value='90'>
 
 										<div class=" w-100 h-100 d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold"><i class="fab fa-node-js"></i></div>
+											<div class="h2 font-weight-bold"><i class="icon-codeigniter"></i></div>
 										</div>
 									</div>
-									<p class="text-center mx-auto">Express.js</p>
+									<p class="text-center mx-auto">CodeIgniter</p>
 								</div>
 							</div>
+							<div class="col-3 col-md-3  col-lg-2 mb-4">
+								<div class="bg-white pt-3 pb-2">
+									<div class=" mx-auto" data-value='90'>
 
+										<div class=" w-100 h-100 d-flex align-items-center justify-content-center">
+											<div class="h2 font-weight-bold"><i class="icon-wordpress"></i></div>
+										</div>
+									</div>
+									<p class="text-center mx-auto">WordPress</p>
+								</div>
+							</div>
+							<div class="col-3 col-md-3  col-lg-2 mb-4">
+								<div class="bg-white pt-3 pb-2">
+									<div class=" mx-auto" data-value='90'>
 
-
-
+										<div class=" w-100 h-100 d-flex align-items-center justify-content-center">
+											<div class="h2 font-weight-bold"><i class="icon-aws"></i></div>
+										</div>
+									</div>
+									<p class="text-center mx-auto">AWS</p>
+								</div>
+							</div>
+							<!--Azure, Flutter, Android, electron,flask,GIT,  -->
 						</div>
 
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -286,91 +393,246 @@
 
 	<!-- Start feature Area -->
 	<section class="feature-area pt-100" id="projects-section">
-		<div class="container">
+		<div class="w-100 overflow-hidden">
 			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-8">
+				<div class="menu-content pb-0 col-lg-8">
 					<div class="col-md-12 heading-section text-center ftco-animate">
-						<h1 class="big big-2">Projects</h1>
-					  <h2 class="mb-4">Projects</h2>
-					  <p>Some projects that I had engaged with...</p>
+						<h2 class="mb-4">Projects</h2>
+						<p>Some projects that I had engaged with...</p>
 					</div>
 				</div>
-			</div>						
-			<div class="row">
-				<div class="col-lg-4 col-md-6 ">
-					<div class="single-feature mb-30 shadow">
-						<div class="title d-flex flex-row pb-20">
-							<span class="lnr lnr-user"></span>
-							<h4 class="mx-auto"><a>Online Fashion Store</a></h4>
-						</div>
-						<p><a href="http://Fashionappfa.herokuapp.com">http://Fashionappfa.herokuapp.com</a><br>
-							-Web based system to manage Fashion Store<br>
-							-Technologies: React, Express.js, Node.js, MongoDB<br>
-							<a href="https://github.com/UshanFernando/AFGroupProject"><span class="fa fa-github"></span> Front-end</a>
-							<a href="https://github.com/UshanFernando/AF-Group-Project-Web-Server"><span class="fa fa-github"></span> Backend-end</a>
-						</p>							
-					</div>							
-				</div>
-				<div class="col-lg-4 col-md-6 ">
-					<div class="single-feature mb-30 shadow">
-						<div class="title d-flex flex-row pb-20">
-							<span class="lnr lnr-license"></span>
-							<h4 class="mx-auto"><a>Geniusschool</a></h4>
-						</div>
-						<p><a href="http://www.geniusschool.lk/">http://www.geniusschool.lk/</a><br>
-							-Web based system to manage Acedemic Institute in Kurunegala<br>
-							-Technologies: PHP, Boostrap, JavaScript, jquery, Ajax, MySQL<br>
-							<a href="http://www.geniusschool.lk/"><span class="fa fa-github"></span></a>
-							
-						</p>							
-					</div>							
-				</div>
-				<div class="col-lg-4 col-md-6 ">
-					<div class="single-feature mb-30 shadow">
-						<div class="title d-flex flex-row pb-20">
-							<span class="lnr lnr-license"></span>
-							<h4 class="mx-auto"><a>Online Video Lending</a></h4>
-						</div>
-						<p><a href="http://www.geniusschool.lk/"></a><br>
-							-Web application to steam videos through subscription plans <br>
-							-Technologies: JavaEE, SQL, JSP, Html, CSS, JS<br>
-							<a href="https://github.com/pavanpabs/Video-lending-system"><span class="fa fa-github"></span>Video-lending-system</a>
-						</p>							
-					</div>							
-				</div>
-				
-				<div class="col-lg-4 col-md-6 ">
-					<div class="single-feature mb-30 shadow">
-						<div class="title d-flex flex-row pb-20">
-							<span class="lnr lnr-license"></span>
-							<h4 class="mx-auto"><a>Hospital Management System </a></h4>
-						</div>
-						<p><a href="http://www.geniusschool.lk/"></a>
-							-An Android Application which can manage Doctors, Staff, Drugs and Patients<br>
-							-Technologies: Android Studio, Java, SQLite<br>
-							<a href="https://github.com/induwara97/Hospital-Management"><span class="fa fa-github"></span> github.com/induwara97/Hospital-Management"</a>
-						</p>							
-					</div>							
-				</div>
-				<div class="col-lg-4 col-md-6 ">
-					<div class="single-feature mb-30 shadow">
-						<div class="title d-flex flex-row pb-20">
-							<span class="lnr lnr-license"></span>
-							<h4 class="mx-auto"><a>Online Mobile Phone Accessory Shop</a></h4>
-						</div>
-						<p><a href="http://www.geniusschool.lk/"></a>
-							-A website where customers can purchase mobile phone accessories.<br>
-							-Technologies: PHP, Boostrap, JavaScript, jquery, Ajax, MySQL<br>
-							
-						</p>							
-					</div>							
-				</div>																					
 			</div>
-		</div>	
-	</section>
-	
+			<div class="map-container">
+				<div class="inner-basic division-map div-toggle pb-5 overflow-hidden" data-target=".division-details"
+					id="divisiondetail">
+					<button class="btn btn-light map-point-sm my-1 prj-btn-active" data-show=".project-tab-1">
+						<div class="content">
+							<div class="centered-y">
+								<p class="my-0">PRO Projects</p>
+							</div>
+						</div>
+					</button>
+					<button class="btn btn-light map-point-sm " data-show=".project-tab-2">
+						<div class="content">
+							<div class="centered-y">
+								<p class="my-0">Pet Projects</p>
+							</div>
+						</div>
+					</button>
+					<button class="btn btn-light map-point-sm" data-show=".project-tab-3">
+						<div class="content">
+							<div class="centered-y">
+								<p class="my-0">Open Sourced</p>
+							</div>
+						</div>
+					</button>
+					<!-- <button class="btn btn-light map-point-sm" data-show=".project-tab-4">
+						<div class="content">
+							<div class="centered-y">
+								<p>Dela</p>
+							</div>
+						</div>
+					</button> -->
+				</div>
+			</div>
 
-	<section class="ftco-section contact-section ftco-no-pb box shadow"  id="contact-section">
+
+			<div class="map-container">
+				<div class="inner-basic division-details">
+					<div class="project-tab-1 initialmsg ">
+						<div class="w-100  d-flex justify-content-center">
+							<div class="col-1 d-flex align-items-center justify-content-end">
+								<a href="#prev" class="tab-previous"><i class="fas fa-chevron-left"
+										style="font-size: 3em;"></i></a>
+							</div>
+
+							<div class="col-9 overflow-hidden" id="projects-container">
+								<div class="container-projects d-flex align-items-center " style="display:block ; height: fit-content;">
+									<div class="item-project col-lg-4 col-md-6 " >
+										<div class="single-feature mb-30 shadow" style="min-height: 500px;">
+											<div class="title d-flex flex-row pb-10">
+												<span class="lnr lnr-user"></span>
+												<h4 class="mx-auto text-uppercase"><a>Online Fashion Store</a></h4>
+											</div>
+											<img src="./images/fashionStore.jpg" class="rounded mb-2"
+												style="max-height: 220px; width: 100%;object-fit: cover;" />
+											<p class="" style="font-size: small;"><a
+													href="http://Fashionappfa.herokuapp.com">http://Fashionappfa.herokuapp.com</a><br>
+												-Web based system to manage Fashion Store<br>
+												-Technologies: React, Express.js, Node.js, MongoDB<br>
+												<a href="https://github.com/UshanFernando/AFGroupProject"><span
+														class="fa fa-github"></span>
+													Front-end</a>
+												<a href="https://github.com/UshanFernando/AF-Group-Project-Web-Server"><span
+														class="fa fa-github"></span> Backend-end</a>
+											</p>
+										</div>
+									</div>
+									<div class="item-project col-lg-4 col-md-6 ">
+										<div class="single-feature mb-30 shadow">
+											<div class="title d-flex flex-row pb-10">
+												<span class="lnr lnr-user"></span>
+												<h4 class="mx-auto text-uppercase"><a>TrustPass -Blockchain based Digital Identity Platform</a></h4>
+											</div>
+											<img src="./images/trustpass.png" class="rounded mb-2"
+												style="max-height: 220px; width: 100%;object-fit: cover;" />
+											<p class="" style="font-size: small;"><a
+													href="https://trust-pass.herokuapp.com/">www.trutpass.host</a><br>
+												-An identity management system comprised with web system and mobile 
+												app which can securely authenticate citizens to Service Providers.Focusses on high security and data privacy<br>
+												-Technologies:  Deep Learning, CNN, ExpressJS, ReactJS, Flask, Tensorflow, 
+												Tailwind CSS<br>
+												
+											</p>
+										</div>
+									</div>
+									<div class="item-project col-lg-4 col-md-6 ">
+										<div class="single-feature mb-30 shadow" style="min-height: 500px;">
+											<div class="title d-flex flex-row pb-10">
+												<span class="lnr lnr-user"></span>
+												<h4 class="mx-auto text-uppercase"><a>Trade Ministry - MMS</a></h4>
+											</div>
+											<img src="./images/mms.png" class="rounded mb-2"
+												style="max-height: 220px; width: 100%;object-fit: cover;" />
+											<p class="" style="font-size: small;"><a
+													href="https://trade-ministry-mms.herokuapp.com/">https://trade-ministry-mms.herokuapp.com</a><br>
+												- A web application which can manage end to end meeting scheduling. from 
+												adding questions related to meetings to automatic meeting scheduling
+												<br>
+												-Technologies:  ReactJS, Flask, NLP, ExpressJS<br>
+												<a href="https://github.com/UshanFernando/trade-ministry-mms-react.git"><span
+														class="fa fa-github"></span>
+													Front-end</a>
+												<a href="https://github.com/pavanpabs/Trade-ministry-mms-backend.git"><span
+														class="fa fa-github"></span> Backend-end</a>
+											</p>
+										</div>
+									</div>
+									<div class="item-project col-lg-4 col-md-6 ">
+										<div class="single-feature mb-30 shadow" style="min-height: 500px;">
+											<div class="title d-flex flex-row pb-10">
+												<span class="lnr lnr-user"></span>
+												<h4 class="mx-auto text-uppercase"><a>Agro</a></h4>
+											</div>
+											<img src="./images/agro.png" class="rounded mb-2"
+												style="max-height: 220px; width: 100%;object-fit: cover;" />
+											<p class="" style="font-size: small;"> <!-- <a
+													href="http://Fashionappfa.herokuapp.com">http://Fashionappfa.herokuapp.com</a><br> -->
+												-All in one Platform for Farmers which is a one stop solution for all farmers' agricultural needs. This 
+												system has distributing fertilizer system, store management system, land classification 
+												system and farming selling platform<br>
+												-Technologies: Laraval, My SQL<br>
+												<a href="https://github.com/pavanpabs/Agrarian-Department-Resource-Management-System-Laraval.git"><span
+														class="fa fa-github"></span>
+													Git-Repo</a>
+												<a href="https://github.com/UshanFernando/AF-Group-Project-Web-Server"><span
+														class="fa fa-github"></span> Backend-end</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-1 d-flex align-items-center">
+								<a href="#next" class="tab-next"><i class="fas fa-chevron-right"
+										style="font-size: 3em;"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="project-tab-2 hide">
+						<div class="w-100  d-flex justify-content-center">
+							<div class="col-1 d-flex align-items-center justify-content-end">
+								<a href="#prev" class="tab-previous"><i class="fas fa-chevron-left"
+										style="font-size: 3em;"></i></a>
+							</div>
+							<div class="col-9 overflow-hidden" id="projects-container">
+								<div class="container-projects" style="display:block ; height: fit-content;">
+									<div class="item-project col-lg-4 col-md-6 ">
+										<div class="single-feature mb-30 shadow">
+											<div class="title d-flex flex-row pb-10">
+												<span class="lnr lnr-user"></span>
+												<h4 class="mx-auto text-uppercase"><a>SLIC Mobile App Redisign</a></h4>
+											</div>
+											<img src="./images/slic.jpg" class="rounded mb-2"
+												style="max-height: 220px; width: 100%;object-fit: cover;" />
+											<p class="" style="font-size: small;"><a
+													href="http://Fashionappfa.herokuapp.com">http://Fashionappfa.herokuapp.com</a><br>
+												-Redesigned the SLIC app for better usability<br>
+												-Technologies: Flutter<br>
+												<a href="https://github.com/pavanpabs/SLIC-Dummy-Flutter.git"><span
+														class="fa fa-github"></span>
+													Git-Repo</a>
+												
+											</p>
+										</div>
+									</div>
+									<div class="item-project col-lg-4 col-md-6 ">
+										<div class="single-feature mb-30 shadow">
+											<div class="title d-flex flex-row pb-10">
+												<span class="lnr lnr-user"></span>
+												<h4 class="mx-auto text-uppercase"><a>Wedding Planner</a></h4>
+											</div>
+											<img src="./images/flickz.png" class="rounded mb-2"
+												style="max-height: 220px; width: 100%;object-fit: cover;" />
+											<p class="" style="font-size: small;"><a
+													href="https://pavans.gq/Weddings-by-Flickz/">Got to Website</a><br>
+												-Designed an website for wedding planning company with SVG animations<br>
+												-Technologies: HTML, CSS, JS, SVG<br>
+												<a href="https://github.com/pavanpabs/SLIC-Dummy-Flutter.git"><span
+														class="fa fa-github"></span>
+													Git-Repo</a>
+												
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-1 d-flex align-items-center">
+								<a href="#next" class="tab-next"><i class="fas fa-chevron-right"
+										style="font-size: 3em;"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="project-tab-3 hide">
+						<div class="w-100  d-flex justify-content-center">
+							<div class="col-1 d-flex align-items-center justify-content-end">
+								<a href="#prev" class="tab-previous"><i class="fas fa-chevron-left"
+										style="font-size: 3em;"></i></a>
+							</div>
+							<div class="col-9 overflow-hidden" id="projects-container">
+								<div class="container-projects" style="display:block ; height: fit-content;">
+									<div class="item-project col-lg-4 col-md-6 ">
+										<div class="single-feature mb-30 shadow">
+											<div class="title d-flex flex-row pb-10">
+												<span class="lnr lnr-user"></span>
+												<h4 class="mx-auto text-uppercase"><a>Form to email API</a></h4>
+											</div>
+											<img src="./images/api.png" class="rounded mb-2"
+												style="max-height: 220px; width: 100%;object-fit: cover;" />
+											<p class="" style="font-size: small;"><a
+													href="https://pavans.gq/Form-To-Email-API-documentation/">Go to Documentation</a><br>
+												-Open Sourced email API available for simple self-sufficient developers<br>
+												-Technologies: Node.js, Nodemailer <br>
+												<a href="https://github.com/pavanpabs/Static-forms-to-email-API.git"><span
+														class="fa fa-github"></span>
+													Git-Repo</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-1 d-flex align-items-center">
+								<a href="#next" class="tab-next"><i class="fas fa-chevron-right"
+										style="font-size: 3em;"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section contact-section ftco-no-pb box shadow" id="contact-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
 				<div class="col-md-7 heading-section text-center ftco-animate">
@@ -383,23 +645,25 @@
 				<div class="col-6 col-md-6 col-lg-3 d-flex ftco-animate ">
 					<div class="align-self-stretch box text-center p-4 shadow">
 						<a href="https://github.com/pavanpabs">
-						<div class="icon d-flex align-items-center justify-content-center ">
-							<span class="fa fa-github"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Github</h3>
-						</div></a>
+							<div class="icon d-flex align-items-center justify-content-center ">
+								<span class="fa fa-github"></span>
+							</div>
+							<div>
+								<h3 class="mb-4">Github</h3>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="col-6 col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box text-center p-4 shadow">
 						<a href="https://www.linkedin.com/in/pavan-somarathne-a487a616a/">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="fa fa-linkedin-square"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">LinkedIn</h3>
-						</div></a>
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-linkedin-square"></span>
+							</div>
+							<div>
+								<h3 class="mb-4">LinkedIn</h3>
+							</div>
+						</a>
 					</div>
 				</div>
 				<!-- <div class="col-6 col-md-6 col-lg-3 d-flex ftco-animate">
@@ -416,30 +680,33 @@
 				<div class="col-6 col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box text-center p-4 shadow">
 						<a href="https://www.hackerrank.com/Pavan98">
-						<div class="icon d-flex align-items-center justify-content-center ">
-							<span class="fab fa-hackerrank"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">HackerRank</h3>
-						</div></a>
+							<div class="icon d-flex align-items-center justify-content-center ">
+								<span class="fab fa-hackerrank"></span>
+							</div>
+							<div>
+								<h3 class="mb-4">HackerRank</h3>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="col-6 col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box text-center p-4 shadow">
 						<a href="https://www.facebook.com/pavan.somarathne.7/">
-						<div class="icon d-flex align-items-center justify-content-center ">
-							<span class="fa fa-facebook-official"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Facebook</h3>
-						</div></a>
+							<div class="icon d-flex align-items-center justify-content-center ">
+								<span class="fa fa-facebook-official"></span>
+							</div>
+							<div>
+								<h3 class="mb-4">Facebook</h3>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="row no-gutters block-9">
 				<div class="col-md-6 order-md-last d-flex">
-					<form action="https://send.pageclip.co/eKviLCpH5UfuWMtbshFkB1IpZK5e20s7/contact-me"  method="post" class="pageclip-form bg-light p-4 p-md-5 contact-form ">
+					<form action="https://send.pageclip.co/eKviLCpH5UfuWMtbshFkB1IpZK5e20s7/contact-me" method="post"
+						class="pageclip-form bg-light p-4 p-md-5 contact-form ">
 						<div class="form-group">
 							<input type="text" name="Name" class="form-control" placeholder="Your Name">
 						</div>
@@ -454,7 +721,8 @@
 								placeholder="Message"></textarea>
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Send Message" class="pageclip-form__submit btn btn-primary py-3 px-5">
+							<input type="submit" value="Send Message"
+								class="pageclip-form__submit btn btn-primary py-3 px-5">
 						</div>
 					</form>
 
@@ -466,8 +734,7 @@
 				<div class="col-md-6 col-lg-6 d-flex">
 					<div class="img-about img d-flex ">
 						<div class="overlay"></div>
-						<div class="img d-flex  align-items-center"
-						style="background-image:url(images/about.jpg);">
+						<div class="img d-flex  align-items-center" style="background-image:url(images/about.jpg);">
 						</div>
 					</div>
 				</div>
@@ -485,8 +752,9 @@
 					<p>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> Pavan | made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
-							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<script>document.write(new Date().getFullYear());</script> Pavan | made with <i
+							class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
+							target="_blank">Colorlib</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
@@ -500,7 +768,8 @@
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" /></svg></div>
+				stroke="#F96D00" />
+		</svg></div>
 
 
 	<script src="js/jquery.min.js"></script>
@@ -517,7 +786,41 @@
 	<script src="js/scrollax.min.js"></script>
 
 	<script src="js/main.js"></script>
-		
+	<script>
+		$(document).on('click', '.map-point-sm', function () {
+			var show = $(this).data('show');
+			$(show).removeClass("hide").siblings().addClass("hide");
+			$(this).siblings().removeClass("prj-btn-active");
+			$(this).addClass("prj-btn-active")
+		});
+		$(function () {
+			var $prev = $('.tab-previous');
+			var $next = $('.tab-next');
+			var $tabsList = $('.container-projects');
+			var $tabs = $('.item-project');
+			var tabWidth = $tabs.width();
+			$tabs.on('click', function (e) {
+				$tabs.removeClass('active');
+				$(this).addClass('active');
+			});
+
+			$prev.on('click', function () {
+				var leftPos = $tabsList.scrollLeft();
+				$tabsList.animate({
+					scrollLeft: leftPos - (tabWidth / 100) * 108
+				})
+			});
+			$next.on('click', function () {
+				var leftPos = $tabsList.scrollLeft();
+				$tabsList.animate({
+					scrollLeft: leftPos + (tabWidth / 100) * 108,
+				})
+
+
+			});
+		});
+	</script>
+
 	<!-- Page Clip -->
 	<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
